@@ -1,7 +1,7 @@
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
-
+var car;
 var engine, world;
 var box1, pig1;
 var backgroundImg;
@@ -34,6 +34,7 @@ function setup(){
     log5 = new Log(870,120,150, -PI/7);
 
     bird = new Bird(100,100);
+    car = new Bird(200,100);
 
 }
 
@@ -58,5 +59,6 @@ function draw(){
     log4.display();
     log5.display();
 
+    car.display();
     bird.display();
 }
